@@ -1,5 +1,5 @@
-CyanHacker Source
-===================
+CyanHacker Source For LG L7 && L5
+=================================
 To get started with CyanHacker, you'll need to get
 familiar with [Git and Repo](http://source.android.com/source/version-control.html).
 
@@ -28,11 +28,11 @@ Now enter the following to initialize the repository:
     cd ~/cyanhacker
 
 Repositories:
----------------
+-------------
 
 Before you continue --> run this in the terminal
 
-    repo init -u git://github.com/CyanHacker/android.git -b kitkat
+    repo init -u git://github.com/asce1062/android.git -b kitkat
 
     repo sync
     
@@ -64,4 +64,4 @@ Use the following as options...
     
 Example:
 
-    ./build-liquid.sh -c3 -p -o3 -j18 hammerhead
+    ./build-liquid.sh -c3 -p -o3 -j18 p705

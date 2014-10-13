@@ -7,6 +7,12 @@
   <remote  name="gh"
            fetch="https://github.com/" />
 
+  <remote  name="bb" 
+           fetch="https://bitbucket.org/" />
+
+  <remote name="github"
+           fetch="https://github.com/" />
+
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod/" />
 
@@ -41,7 +47,6 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="android" name="android" remote="ls" revision="kitkat" />
-  <project path="art" name="android_art" remote="ls" revision="kitkat" />
   <project path="bionic" name="android_bionic" remote="ls" revision="kitkat" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" revision="cm-11.0" />
@@ -233,7 +238,7 @@
   <project path="external/sepolicy" name="android_external_sepolicy" remote="ls" revision="cm-11.0" />
   <project path="external/sfntly" name="platform/external/sfntly" />
   <project path="external/sil-fonts" name="platform/external/sil-fonts" />
-  <project path="external/skia" name="android_external_skia" remote="cm" revision="cm-11.0" />
+  <project path="external/skia" name="androidarmv6/android_external_skia" remote="github" revision="cm-11.0"/>
   <project path="external/smack" name="platform/external/smack" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" remote="ln" revision="linaro_android_4.4.4" />
@@ -257,6 +262,7 @@
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" remote="ln" revision="linaro_android_4.4.4" />
   <project path="external/valgrind" name="platform/external/valgrind" />
+  <project path="external/webkit" name="imerom/android_external_webkit" remote="bb" revision="cm-11.0"/>
   <project path="external/webp" name="android_external_webp" remote="ls" revision="kitkat" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="cm" revision="cm-11.0" />
@@ -295,7 +301,7 @@
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="frameworks/testing" name="platform/frameworks/testing" />
   <project path="frameworks/volley" name="platform/frameworks/volley" />
-  <project path="frameworks/webview" name="android_frameworks_webview" remote="ls" revision="kitkat" />
+  <project path="frameworks/webview" name="androidarmv6/android_frameworks_webview" remote="github" revision="cm-11.0" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" remote="ln" revision="linaro_android_4.4.4" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="ls" revision="kitkat" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cm" revision="cm-11.0" />
@@ -308,7 +314,7 @@
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="ls" revision="kitkat" />
-  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="ls" revision="kitkat" />
+  <project path="hardware/qcom/display-caf" name="imerom/android_hardware_qcom_display-caf" groups="caf" remote="bb" revision="cm-11.0"/>
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="ls" revision="kitkat" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="ls" revision="kitkat" />
@@ -322,7 +328,7 @@
   <project path="libcore" name="android_libcore" remote="ls" revision="kitkat" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
-  <project path="packages/apps/Apollo" name="omnirom/android_packages_apps_Apollo" remote="gh" revision="android-4.4" />
+  <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/BluetoothExt" name="android_packages_apps_BluetoothExt" remote="cm" revision="cm-11.0" />
