@@ -438,5 +438,11 @@
   <project path="vendor/liquid" name="android_vendor_liquid" remote="ch" revision="kitkat" >
     <copyfile src="tools/build-liquid.sh" dest="build-liquid.sh" />
   </project>
+<!--l7 -->
+  <project path="vendor/lge" name="imerom/proprietary_vendor_lge" remote="bb" revision="cm-11.0"/>
+  <project path="device/lge/p705" name="imerom/android_device_lge_p705" remote="bb" revision="cm-11.0"/>
+  <project path="device/lge/p700" name="imerom/android_device_lge_p700" remote="bb" revision="cm-11.0"/>
+  <project path="device/lge/msm7x27a-common" name="imerom/android_device_lge_msm7x27a-common" remote="bb" revision="cm-11.0"/>
+  <project path="kernel/lge/msm7x27a-common" name="mahdirom/lge-kernel-lproj" remote="bb" revision="cyanogen" />
 
 </manifest>
