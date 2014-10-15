@@ -7,9 +7,6 @@
   <remote  name="gh"
            fetch="https://github.com/" />
 
-  <remote  name="bb" 
-           fetch="https://bitbucket.org/" />
-
   <remote name="github"
            fetch="https://github.com/" />
 
@@ -262,7 +259,7 @@
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" remote="ln" revision="linaro_android_4.4.4" />
   <project path="external/valgrind" name="platform/external/valgrind" />
-  <project path="external/webkit" name="imerom/android_external_webkit" remote="bb" revision="cm-11.0"/>
+  <project path="external/webkit" name="asce1062/android_external_webkit" remote="github" revision="master"/>
   <project path="external/webp" name="android_external_webp" remote="ls" revision="kitkat" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="cm" revision="cm-11.0" />
@@ -314,7 +311,7 @@
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="ls" revision="kitkat" />
-  <project path="hardware/qcom/display-caf" name="imerom/android_hardware_qcom_display-caf" groups="caf" remote="bb" revision="cm-11.0"/>
+  <project path="hardware/qcom/display-caf" name="asce1062/android_hardware_qcom_display-caf" groups="caf" remote="github" revision="master"/>
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="ls" revision="kitkat" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="ls" revision="kitkat" />
@@ -418,7 +415,7 @@
   <project path="system/extras" name="android_system_extras" remote="ls" revision="kitkat" />
   <project path="system/media" name="android_system_media" remote="ls" revision="kitkat" />
   <project path="system/netd" name="android_system_netd" remote="cm" revision="cm-11.0" />
-  <project path="system/qcom" name="android_system_qcom" remote="ls" revision="kitkat" />
+  <project path="system/qcom" name="asce1062/android_system_qcom" remote="github" revision="master" />
   <project path="system/security" name="platform/system/security" />
   <project path="system/vold" name="android_system_vold" remote="ls" revision="kitkat" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
@@ -429,14 +426,15 @@
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="vendor/liquid" name="android_vendor_liquid" remote="ch" revision="kitkat" >
+  <project path="vendor/liquid" name="asce1062/android_vendor_liquid" remote="github" revision="master" >
     <copyfile src="tools/build-liquid.sh" dest="build-liquid.sh" />
   </project>
-<!--l7 -->
-  <project path="vendor/lge" name="imerom/proprietary_vendor_lge" remote="bb" revision="cm-11.0"/>
-  <project path="device/lge/p705" name="imerom/android_device_lge_p705" remote="bb" revision="cm-11.0"/>
-  <project path="device/lge/p700" name="imerom/android_device_lge_p700" remote="bb" revision="cm-11.0"/>
-  <project path="device/lge/msm7x27a-common" name="imerom/android_device_lge_msm7x27a-common" remote="bb" revision="cm-11.0"/>
-  <project path="kernel/lge/msm7x27a-common" name="mahdirom/lge-kernel-lproj" remote="bb" revision="cyanogen" />
-
+<!-- L7 && L5 -->
+  <project path="vendor/lge" name="asce1062/android_vendor_lge" remote="github" revision="master" />
+  <project path="kernel/lge/SKernel" name="shskyinfo/SKernel" remote="github" revision="master" />
+  <project path="kernel/lge/msm7x27a-common" name="asce1062/android_kernel_lge_msm7x27a-common" remote="github" revision="beta_9.5" />
+  <project path="device/lge/msm7x27a-common" name="asce1062/android_device_lge_msm7x27a-common" remote="github" revision="master" />
+  <project path="device/lge/e610" name="asce1062/CyanHacker_android_device_lge_e610"  remote="github" revision="master" />
+  <project path="device/lge/p705" name="asce1062/CyanHacker_android_device_lge_p705"  remote="github" revision="master" />
+  <project path="device/lge/p700" name="asce1062/CyanHacker_android_device_lge_p700"  remote="github" revision="master" />
 </manifest>
