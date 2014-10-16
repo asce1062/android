@@ -11,7 +11,7 @@ You will need to set up some directories in your build environment.
 To create them run:
 
     mkdir -p ~/bin
-    mkdir -p ~/cyanhacker
+    mkdir -p ~/android/cyanhacker
 
 Install the Repository
 ----------------------
@@ -25,7 +25,7 @@ Enter the following to download the "repo" binary:
 You may need to reboot for these changes to take effect. 
 Now enter the following to initialize the repository:
 
-    cd ~/cyanhacker
+    cd ~/android/cyanhacker
 
 Repositories:
 -------------
@@ -40,9 +40,18 @@ Before you continue --> run this in the terminal
 Building the System
 ---------------
 
-Build CyanHacker with the following command
+Apply Classic Webview Patch && No text Auto-sizing For Browser (A MUST!)
+
+    cd device/lge/msm7x27a-common/patches && ./apply.sh
+
+Build CyanHacker with the following commands
+
+    . build/envsetup.sh
+
+    lunch (enter device number and hit enter)
 
     ./build-liquid.sh {options} {device}
+
 
 Use the following as options...
 
@@ -63,5 +72,11 @@ Use the following as options...
     -v  Verbose build output
     
 Example:
+
+    . build/envsetup.sh
+
+    lunch
+
+    Which would you like? [aosp_arm-eng] 1 11 (Number For P705)
 
     ./build-liquid.sh -c3 -p -o3 -j18 p705
