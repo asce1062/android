@@ -80,4 +80,4 @@ Example:
 
     Which would you like? [aosp_arm-eng] 1 (Number For P705, this could varry depending on the number of devices you are building)
 
-    ./build-liquid.sh -c3 -p -o3 -j18 p705
+    ./build-hacker.sh -c3 -p -o3 -j18 p705
