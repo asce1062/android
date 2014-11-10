@@ -54,7 +54,7 @@ Build CyanHacker with the following commands
 
     lunch (enter device number and hit enter)
 
-    ./build-liquid.sh {options} {device}
+    ./build-hacker.sh {options} {device}
 
 
 Use the following as options...
@@ -70,9 +70,6 @@ Use the following as options...
     -j# Set jobs
     -s  Sync before build
     -p  Build using pipe
-    -o# Select GCC O Level
-            Valid O Levels are
-            1 (Os) or 3 (O3)
     -v  Verbose build output
     
 Example:
