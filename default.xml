@@ -39,7 +39,7 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="android_build" remote="ch" revision="kitkat">
+  <project path="build" name="asce1062/android_build" remote="github" revision="kitkat">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
