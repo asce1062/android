@@ -39,11 +39,12 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="asce1062/android_build" remote="github" revision="kitkat">
+  <project path="build" name="android_build" remote="ch" revision="kitkat">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="android" name="asce1062/android" remote="github" revision="kitkat" />
+  <project path="art" name="android_art" remote="ls" revision="kitkat" />
   <project path="bionic" name="android_bionic" remote="ls" revision="kitkat" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" revision="cm-11.0" />
@@ -269,7 +270,7 @@
   <project path="external/yaffs2" name="android_external_yaffs2" remote="cm" revision="cm-11.0" />
   <project path="external/zlib" name="android_external_zlib" remote="cm" revision="cm-11.0" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="ls" revision="kitkat" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="ch" revision="kitkat" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ch" revision="kitkat" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" />
